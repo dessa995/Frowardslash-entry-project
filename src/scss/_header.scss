@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   border-bottom: 2px solid #ababab;
-  // justify-content: space-between;
+  background-color: #fff;
 }
 
 .header--search-div {
@@ -18,6 +18,59 @@
 
 .header--searchbox-wrapper {
   display: none;
+
+  &.active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 999;
+    top: 105px;
+  }
+}
+
+.search-input--container {
+  position: relative;
+  margin-top: 250px;
+  width: 60%;
+  border-bottom: 2px solid #fff;
+}
+
+.header--search-label {
+  @include heading-font;
+
+  font-size: 36px;
+  color: #fff;
+}
+
+.header--search-input {
+  @include heading-font;
+
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 36px;
+  width: 70%;
+  margin: 0 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header--search-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: transparent;
+  border: none;
+}
+
+.searchbox-btn--icon {
+  color: #fff;
 }
 
 .header-links--wrapper {
@@ -30,6 +83,10 @@
 
 .header--logo-container {
   margin-top: 25px;
+}
+
+.header--responsive-icon-div {
+  display: none;
 }
 
 .header-navbar--wrapper {
@@ -62,5 +119,204 @@
   &:hover {
     color: #ff4646;
     font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .header--search-div {
+    padding: 25px 30px;
+    align-items: center;
+  }
+
+  .header-navbar--link {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .header--search-div {
+    padding: 40px;
+  }
+
+  .header-navbar--half {
+    gap: 40px;
+  }
+
+  .header-navbar--link {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header-wrapper {
+    position: relative;
+  }
+
+  .header--responsive-icon-div {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 30px;
+    font-weight: 100;
+    color: #707070;
+  }
+
+  .header--search-div {
+    padding: 20px;
+    width: 10%;
+  }
+
+  .header--logo-container {
+    margin-bottom: -12px;
+  }
+
+  .header-navbar--wrapper {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0;
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: 0.2s ease-in-out;
+
+    &.active {
+      visibility: visible;
+      width: 90%;
+    }
+  }
+
+  .header-navbar--half {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 0;
+  }
+
+  .header-navbar--link {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .header--searchbox-wrapper {
+    &.active {
+      top: 70px;
+    }
+  }
+
+  .header--search-input {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    position: relative;
+  }
+
+  .header--logo-container {
+    display: none;
+  }
+
+  .header--responsive-icon-div {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 25px;
+  }
+
+  .fa-search {
+    font-size: 17px;
+  }
+
+  .header--search-div {
+    padding: 14px;
+    width: 10%;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 30px;
+    font-weight: 100;
+    color: #707070;
+  }
+
+  .header--logo-container {
+    margin-bottom: -12px;
+  }
+
+  .header-navbar--wrapper {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0;
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: 0.2s ease-in-out;
+
+    &.active {
+      visibility: visible;
+      width: 90%;
+      top: 26px;
+    }
+
+    &.active::after {
+      background-color: #444444;
+      opacity: 0.3;
+      height: 100vh;
+      width: 9.02%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .header-navbar--half {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 0;
+  }
+
+  .header-navbar--link {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .header--searchbox-wrapper {
+    &.active {
+      top: 48px;
+    }
+  }
+
+  .header--search-label {
+    font-size: 19px;
+  }
+
+  .header--search-input {
+    font-size: 19px;
+    width: 50%;
   }
 }

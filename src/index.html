@@ -26,7 +26,7 @@
   <body>
     <header>
       <div class="header-wrapper">
-        <div class="header--search-div">
+        <div class="header--search-div js-header--search-div">
           <a href="javascript:;">
             <i class="fa fa-search"></i>
           </a>
@@ -34,17 +34,20 @@
 
         <!-- SEARCH BOX -->
         <div class="header--searchbox-wrapper">
-          <input
-            type="search"
-            name="seacrh"
-            class="header--search-input js-header--search-input"
-          />
-          <button
-            type="button"
-            class="header--search-button js-header--search-button"
-          >
-            <i class="fa fa-search"></i>
-          </button>
+          <div class="search-input--container">
+            <label class="header--search-label">Search</label>
+            <input
+              type="search"
+              name="seacrh"
+              class="header--search-input js-header--search-input"
+            />
+            <button
+              type="button"
+              class="header--search-button js-header--search-button"
+            >
+              <i class="fa fa-search searchbox-btn--icon"></i>
+            </button>
+          </div>
         </div>
         <!-- SEARCH BOX END -->
 
@@ -54,6 +57,17 @@
               <img src="../assets/images/Layer-2.png" alt="Forwardslash logo" />
             </a>
           </div>
+
+          <!---------------- RESPONSIVE ICON ------------------------>
+          <div
+            class="header--responsive-icon-div js-header--responsive-icon-div"
+          >
+            <a href="javascript:;">
+              <i class="fa fa-bars js-fa" aria-hidden="true"></i>
+            </a>
+          </div>
+          <!---------------- RESPONSIVE ICON ------------------------>
+
           <nav class="header-navbar--wrapper">
             <div class="header-navbar--half">
               <a class="header-navbar--link js-header-navbar-link" href="#"
@@ -63,6 +77,7 @@
                 >What we do</a
               >
             </div>
+
             <div class="header-navbar--half">
               <a class="header-navbar--link js-header-navbar-link" href="#"
                 >What we think</a
@@ -75,6 +90,52 @@
         </div>
       </div>
     </header>
+    <section class="mobile-tablet-hero-wrapper">
+      <div class="section-hero--text-wrapper">
+        <div class="hero-heading--wrapper">
+          <h1 class="heading-name">Christopher Acton</h1>
+          <div class="hero-image--container">
+            <img
+              src="../assets/images/Mask-Group-1.png"
+              alt="Image of Christopher"
+            />
+          </div>
+          <h1 class="heading-title">Partner</h1>
+          <div class="hero-div--contact">
+            <div class="hero-div--contact-numbers">
+              <p>DD +44 (0)20 7849 2543</p>
+              <p>T +44 (0)20 7831 9222</p>
+            </div>
+            <a href="#">Email Christopher</a>
+          </div>
+        </div>
+        <div class="hero--descriprion-container">
+          <h2 class="hero--description-heading">
+            Chris advises hedge funds, managed account platforms and proprietary
+          </h2>
+          <p class="hero--description-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            hendrerit metus quis suscipit eleifend. Fusce eu tortor sed lorem
+            vestibulum posuere at eu lorem. Duis vitae porttitor tellus. Fusce
+            faucibus sodales odio id vehicula. Vivamus aliquam vulputate nisi,
+            id laoreet orci ultricies.
+          </p>
+          <p class="hero--description-text">
+            Consectetur adipiscing elit. Donec hendrerit metus quis suscipit
+            eleifend. Fusce eu tortor sed lorem vestibulum posuere at eu lorem.
+            Duis vitae porttitor tellus. Fusce faucibus sodales odio id
+            vehicula. Vivamus aliquam vulputate nisi, id laoreet orci ultricies.
+          </p>
+          <p class="hero--description-text">
+            Ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+            metus quis suscipit eleifend. Fusce eu tortor sed lorem vestibulum
+            posuere at eu lorem. Duis vitae porttitor tellus. Fusce faucibus
+            sodales odio id vehicula. Vivamus aliquam vulputate nisi, id laoreet
+            orci ultricies.
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="section-hero--wrapper">
       <!-- <div class="section-hero--wrapper"> -->
       <div class="section-hero--text-wrapper">
@@ -110,7 +171,6 @@
       </div>
       <div class="hero--contact-and-img-wrapper">
         <div class="hero-image--container">
-          <!-- &nbsp; -->
           <img
             src="../assets/images/Mask-Group-1.png"
             alt="Image of Christopher"
@@ -125,6 +185,56 @@
         </div>
       </div>
       <!-- </div> -->
+    </section>
+    <section class="section-article-wrapper">
+      <div class="article-half--wrapper-upper">
+        <div class="article-image--container">&nbsp;</div>
+        <div class="article-text-half">
+          <div class="article-text--wrapper">
+            <h1 class="article-heading--upper">Lorem Ipsum Dolor</h1>
+            <div class="article-paragraph--wrapper">
+              <p class="article-paragraph--upper">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                hendrerit metus quis suscipit eleifend. Fusce eu tortor sed
+                lorem vestibulum posuere at eu lorem. Duis vitae porttitor
+                tellus. Fusce faucibus sodales odio id. Vivamus aliquam
+                vulputate nisi, id laoreet orci ultricies.
+              </p>
+              <p class="article-paragraph--upper">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                hendrerit metus quis suscipit eleifend. Fusce eu tortor sed
+                lorem vestibulum posuere at eu lorem. Duis vitae porttitor
+                tellus. Fusce faucibus sodales odio id vehicula. Vivamus aliquam
+                vulputate nisi, id laoreet orci ultricies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article-half--wrapper-lower">
+        <div class="article-text-half">
+          <div class="article-text--wrapper">
+            <h1 class="article-heading--lower">Lorem Ipsum Dolor</h1>
+            <div class="article-paragraph--wrapper">
+              <p class="article-paragraph--lower">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                hendrerit metus quis suscipit eleifend. Fusce eu tortor sed
+                lorem vestibulum posuere at eu lorem. Duis vitae porttitor
+                tellus. Fusce faucibus sodales odio id. Vivamus aliquam
+                vulputate nisi, id laoreet orci ultricies.
+              </p>
+              <p class="article-paragraph--lower">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                hendrerit metus quis suscipit eleifend. Fusce eu tortor sed
+                lorem vestibulum posuere at eu lorem. Duis vitae porttitor
+                tellus. Fusce faucibus sodales odio id vehicula. Vivamus aliquam
+                vulputate nisi, id laoreet orci ultricies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="article-image--container">&nbsp;</div>
+      </div>
     </section>
   </body>
 </html>
