@@ -21,6 +21,12 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <title>Forwardslash entry project</title>
   </head>
   <body>
@@ -186,7 +192,7 @@
       </div>
       <!-- </div> -->
     </section>
-    <section class="section-article-wrapper">
+    <section class="section-article">
       <div class="article-half--wrapper-upper">
         <div class="article-image--container">&nbsp;</div>
         <div class="article-text-half">
@@ -236,5 +242,81 @@
         <div class="article-image--container">&nbsp;</div>
       </div>
     </section>
+    <section class="section-gallery">
+      <div class="gallery-div--wrapper">
+        <h1 class="gallery-heading">Gallery</h1>
+        <div class="div-slider--container"></div>
+      </div>
+    </section>
+    <section class="section--contact-form">
+      <div class="contact-form--wrapper">
+        <div class="form--container-div">
+          <div class="contact-div--info">
+            <h1 class="contact-form-heading">Contact</h1>
+            <p class="contact-form-description">
+              Ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+              metus quis suscipit eleifend. Fusce eu tortor sed lorem
+              vestibulum.
+            </p>
+          </div>
+          <div class="contact-form--container">
+            <form>
+              <input
+                type="text"
+                name="name"
+                class="js-name-input text-input"
+                placeholder="&#xf2c0; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First Name"
+                style="font-family: Lato, FontAwesome"
+              />
+              <input
+                type="text"
+                name="surname"
+                class="js-surname-input text-input"
+                placeholder="&#xf2c0; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name"
+                style="font-family: Lato, FontAwesome"
+              />
+              <input
+                type="email"
+                name="email"
+                class="js-email-input text-input"
+                placeholder="&#xf003; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email"
+                style="font-family: Lato, FontAwesome"
+              />
+              <textarea
+                name="message"
+                class="js-message-input textarea-input"
+                placeholder="&#xf003; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Message"
+                style="font-family: Lato, FontAwesome"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="div-checkbox--wrapper">
+                <input
+                  type="checkbox"
+                  name="termes-and-conditions"
+                  class="js-input-checkbox input-checkbox"
+                />
+                <label for="checkbox" class="contact-label">
+                  I agree to terms and conditions
+                </label>
+              </div>
+
+              <input
+                type="submit"
+                value="Submit"
+                class="js-form-submit-btn form-submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="contact-img--container">&nbsp;</div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
