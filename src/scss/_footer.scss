@@ -87,6 +87,11 @@ footer {
   border-right: 1px solid #ddccb8;
 }
 
+.footer-adress {
+  font-size: 16px;
+  color: #444;
+}
+
 .email-link--container {
   display: flex;
   justify-content: flex-end;
@@ -144,10 +149,162 @@ footer {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  .footer-content--wrapper {
+    width: 100%;
+  }
+
+  .footer-email {
+    justify-content: space-between;
+    padding: 26px 10px;
+  }
+
+  .span-text-email {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .fa-envelope-o,
+  .fa-arrow-right {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  footer {
+    padding-bottom: 130px;
+  }
+
+  .footer-content--wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-heading--div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content--links-wrapper {
+    width: 100%;
+  }
+
+  .content-links--container {
+    padding: 52px;
+  }
+
+  .footer-link {
+    margin: 0px;
+    font-size: 15px;
+
+    &:nth-last-of-type(-n + 2) {
+      font-size: 14px;
+    }
+  }
+
+  .footer-content--heading {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .content-adress-container {
+    border-right: none;
+    border-left: none;
+  }
+
+  .footer-adress {
+    font-size: 15px;
+  }
+
+  .email-link--container {
+    justify-content: center;
+  }
+
+  .footer-email {
+    width: 50%;
+    justify-content: space-between;
+    padding: 26px 10px;
+  }
+
+  .span-text-email {
+    padding: 0;
+  }
+
+  .copyright-text {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  footer {
+    padding-bottom: 130px;
+  }
+
+  .footer-content--wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-heading--div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content--links-wrapper {
+    width: 100%;
+  }
+
+  .content-links--container {
+    padding: 52px 20px;
+  }
+
+  .footer-link {
+    margin: 0px;
+    font-size: 15px;
+
+    &:nth-last-of-type(-n + 2) {
+      font-size: 14px;
+    }
+  }
+
+  .footer-content--heading {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .content-adress-container {
+    border-right: none;
+    border-left: none;
+  }
+
+  .footer-adress {
+    font-size: 15px;
+  }
+
+  .email-link--container {
+    justify-content: center;
+  }
+
+  .footer-email {
+    width: 50%;
+    justify-content: space-between;
+    padding: 26px 10px;
+  }
+
+  .span-text-email {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .fa-envelope-o,
+  .fa-arrow-right {
+    font-size: 11px;
+  }
+
+  .copyright-text {
+    font-size: 11px;
+  }
 }

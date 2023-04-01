@@ -147,12 +147,13 @@
       margin-right: 0;
     }
     &:nth-of-type(odd) {
-      margin-left: 20px;
+      margin-left: 15px;
     }
   }
 
   .slider-img {
     width: 40%;
+    margin: 0 27px 27px 0;
   }
 
   .slick-dots button {
