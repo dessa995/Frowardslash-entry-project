@@ -1,1 +1,1 @@
-# Frowardslash-entery-project
+# Frowardslash-entry-project
